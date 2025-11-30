@@ -1,0 +1,57 @@
+.btn-accept {
+  background-color: #059669; /* emerald-600 */
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: background-color 150ms ease;
+}
+.btn-accept:hover:not(:disabled) {
+  background-color: #047857; /* emerald-700 */
+}
+.btn-accept:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-reject {
+  background-color: #dc2626; /* red-600 */
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: background-color 150ms ease;
+}
+.btn-reject:hover:not(:disabled) {
+  background-color: #b91c1c; /* red-700 */
+}
+.btn-reject:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.application-message {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+}
+.application-message.accepted {
+  background-color: rgba(16, 185, 129, 0.12); /* green-500 12% */
+  color: #059669;
+}
+.application-message.rejected {
+  background-color: rgba(239, 68, 68, 0.12); /* red-500 12% */
+  color: #dc2626;
+}
+
+/* small utility for badges */
+.badge {
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.badge.pending { background: #fef3c7; color: #92400e; }
+.badge.reviewed { background: #dbeafe; color: #1e40af; }
+.badge.accepted { background: #d1fae5; color: #065f46; }
+.badge.rejected { background: #fee2e2; color: #991b1b; }
